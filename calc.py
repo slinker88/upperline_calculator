@@ -54,7 +54,7 @@ def exponents (x,y):
 print("1. Add " + "2. Subtract " + "3. Multiply " + "4. Divide " + "5. Exponent")
 choice = input("Select an option:")
 
-if choice in ("1", "2", "3", "4", "5", "6"):
+if choice in ("1", "2", "3", "4", "5"):
     x = int(input("Enter first number: "))
     y = int(input("Enter second number: "))
 
@@ -68,7 +68,5 @@ if choice in ("1", "2", "3", "4", "5", "6"):
         print(str(x) + "/" + str(y) + "=" + divide(x,y))
     elif choice == "5":
         print(str(x) + "^" + str(y) + "=" + exponents(x,y))
-   
 else:
     print("Invalid input")
-
